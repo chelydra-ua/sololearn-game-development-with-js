@@ -1,5 +1,4 @@
 window.onload = function () {
-    let btn = document.getElementById('jump');
     let count = 0;
 
     const canvas = document.getElementById('canvas');
@@ -11,7 +10,7 @@ window.onload = function () {
     context.fillStyle = 'red';
     context.fill();
 
-    btn.onclick = function () {
+    document.onkeydown = function () {
         count += 1;
         y -= 25;
         function draw() {
